@@ -30,6 +30,8 @@ $(function(){
         gridster.enable($('.gridster li'));
         gridster.enable_resize($('.gridster li'));
     }).data('gridster');
+//Widgets with picture 
+    $('.gridster li a').has('img').addClass('picture-in');
 // Exit edit-mode
     $('#exit-edit a').live('click', function(){
         $('.main-desktop-controls').html('<h3>Главный рабочий стол</h3>');
