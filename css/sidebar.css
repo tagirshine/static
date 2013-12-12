@@ -1,0 +1,145 @@
+/* Sidebar */
+
+#sidebar {
+  position: fixed;
+  width: 70px;
+  background-color: #ededed;
+  height: 100%;
+}
+
+#sidebar .widgets {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url("../images/icon-sidebar-widgets.png") no-repeat scroll 0px 0px;
+  margin-bottom: 15px;
+}
+
+#sidebar .widgets:hover {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url("../images/icon-sidebar-widgets.png") no-repeat scroll 0px -70px #1ba0e1;
+}
+
+#sidebar .shortcut {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url("../images/background-shortcut.png") no-repeat scroll 0px 0px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  position: relative;
+}
+
+#sidebar .shortcut.active {
+  background: url("../images/background-shortcut.png") no-repeat scroll 0px -70px;
+}
+
+#sidebar .shortcut:hover {
+  background: url("../images/background-shortcut.png") no-repeat scroll -70px 0px;
+}
+
+#sidebar .shortcut.active:hover {
+  background: url("../images/background-shortcut.png") no-repeat scroll 0px -70px;
+}
+
+#sidebar .shortcut .events {
+  position: absolute;
+  display: block;
+  min-width: 10px;
+  min-height: 20px;
+  border-radius: 14px;
+  background-color: #e63d4d;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  font-family: "OpenSans Regular", sans-serif;
+  line-height: 20px;
+  top: 7px;
+  left: 43px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+#sidebar .shortcut.active .events {
+  display: none;
+}
+
+#sidebar .icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+#sidebar .documents .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px -350px;
+}
+
+#sidebar .documents:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px -350px;
+}
+
+#sidebar .documents.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px -350px;
+}
+
+#sidebar .messages .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px -210px;
+}
+
+#sidebar .messages:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px -210px;
+}
+
+#sidebar .messages.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px -210px;
+}
+
+#sidebar .objects .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px -140px;
+}
+
+#sidebar .objects:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px -140px;
+}
+
+#sidebar .objects.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px -140px;
+}
+
+#sidebar .replies .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px -70px;
+}
+
+#sidebar .replies:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px -70px;
+}
+
+#sidebar .replies.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px -70px;
+}
+
+#sidebar .permits .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px -280px;
+}
+
+#sidebar .permits:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px -280px;
+}
+
+#sidebar .permits.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px -280px;
+}
+
+#sidebar .library .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll 0px 0px;
+}
+
+#sidebar .library:hover .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -70px 0px;
+}
+
+#sidebar .library.active .icon {
+  background: url("../images/icons-shortcuts.png") no-repeat scroll -140px 0px;
+}
