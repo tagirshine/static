@@ -12,6 +12,7 @@
   li {
     border-top: 1px solid #666666;
     overflow: hidden;
+    width: 100%;
     &:first-child {
       border-top: 0;
       border-radius: 5px 5px 0 0;
@@ -25,8 +26,7 @@
       color: #fff;
       font-size: 13px;
       padding: 13px 0 13px 34px;
-      width: 259px;
-      text-transform: capitalize;
+      display: block;
       &:before {
         font-size: 18px;
         left: -16px;
@@ -69,6 +69,55 @@
     position: absolute;
     top: -7px;
     width: 0;
+  }
+  .time {
+  padding:13px 12px 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 23px;
+    .date {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .progress {
+      height:8px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .progress-bar-success {
+      background: #1bbc9b;
+    }
+  }
+  &.history {
+    li {
+      border: none;
+      line-height: 31px;
+      &:hover {
+        a {
+          background:none;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+     .title {
+        padding-left: 10px;
+        position: relative;
+         &:before {
+          font-size: 18px;
+          left: -10px;
+        }
+     }
+      > a {
+        display: inline;
+        padding: 0;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    }
+    .btn {
+      text-decoration: none;
+    }
   }
 }
 

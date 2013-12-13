@@ -76,3 +76,17 @@
   font-size: 18px;
   top: 2px;
 }
+
+.dropdown-menu {
+  .back-btn {
+    background: none;
+    color: #808080;
+    border: 3px solid #808080;
+    text-decoration: none;
+    float: left;
+    display:inline-block
+    &:hover {
+      border: 3px solid #fff;
+    }
+  }
+}

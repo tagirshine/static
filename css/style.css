@@ -23,7 +23,12 @@ h4 {
 
 a {
   color: #989898;
-  outline: none; }
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer; }
   a:hover, a:focus, a:active {
     color: #989898;
     outline: none; }
@@ -109,6 +114,16 @@ ul {
   font-size: 18px;
   top: 2px; }
 
+.dropdown-menu .back-btn {
+  background: none;
+  color: #808080;
+  border: 3px solid #808080;
+  text-decoration: none;
+  float: left; }
+  display:inline-block
+  .dropdown-menu .back-btn:hover {
+    border: 3px solid #fff; }
+
 /*icons^*/
 .col-md-3#exit-edit {
   padding: 0px;
@@ -142,6 +157,7 @@ ul {
 .dropdown-menu li {
   border-top: 1px solid #666666;
   overflow: hidden;
+  width: 100%;
   color: #fff;
   font-size: 13px; }
   .dropdown-menu li:first-child {
@@ -153,8 +169,7 @@ ul {
     color: #fff;
     font-size: 13px;
     padding: 13px 0 13px 34px;
-    width: 259px;
-    text-transform: capitalize; }
+    display: block; }
     .dropdown-menu li a:before {
       font-size: 18px;
       left: -16px; }
@@ -189,6 +204,41 @@ ul {
   position: absolute;
   top: -7px;
   width: 0; }
+.dropdown-menu .time {
+  padding: 13px 12px 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 23px; }
+  .dropdown-menu .time .date {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 16px; }
+  .dropdown-menu .time .progress {
+    height: 8px;
+    margin-bottom: 0;
+    border-radius: 0; }
+  .dropdown-menu .time .progress-bar-success {
+    background: #1bbc9b; }
+.dropdown-menu.history li {
+  border: none;
+  line-height: 31px; }
+  .dropdown-menu.history li:hover a {
+    background: none;
+    color: #fff;
+    text-decoration: none; }
+  .dropdown-menu.history li .title {
+    padding-left: 10px;
+    position: relative; }
+    .dropdown-menu.history li .title:before {
+      font-size: 18px;
+      left: -10px; }
+  .dropdown-menu.history li > a {
+    display: inline;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 12px; }
+.dropdown-menu.history .btn {
+  text-decoration: none; }
 
 .other-desktop .title {
   padding-left: 17px; }
@@ -527,6 +577,8 @@ ul {
   .top-pannel .username {
     margin-top: 2px;
     float: right; }
+  .top-pannel .dropdown-menu {
+    text-transform: none; }
 
 .top-pannel .btn-available {
   font-size: 12px; }
