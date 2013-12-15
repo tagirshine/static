@@ -181,6 +181,13 @@
   .dropdown-menu {
     text-transform: none;
   }
+  .search {
+    margin: 0;
+    min-width: 220px;
+    input[type="submit"] {
+      display: none;
+    }
+  }
 }
 
 .top-pannel .btn-available {
@@ -431,9 +438,12 @@
           display: block;
         }
       }
-    a {
+    >a {
       color: #0e84cf;
       text-decoration: none;
+    div {
+      display: table-cell;
+    }
     }
     &.status {
       text-align: center;
@@ -488,6 +498,9 @@
     font-weight: 100;
     font-size: 22px;
   }
+}
+.caret {
+  border-color-top: inherit;
 }
 
 /*footer*/

@@ -28,6 +28,7 @@
       padding: 13px 0 13px 34px;
       display: block;
       text-decoration: none;
+      text-align: left;
       &:before {
         font-size: 18px;
         left: -16px;
@@ -42,6 +43,8 @@
     .title {
       margin: 14px 0 10px;
       display: block;
+      text-align: left;
+      padding-left: 0px;
     }
   }
   .other-desktop a {
@@ -102,7 +105,7 @@
         }
       }
      .title {
-        padding-left: 10px;
+        padding-left: 5px;
         position: relative;
          &:before {
           font-size: 18px;
@@ -121,6 +124,24 @@
     }
     .back-btn {
       margin-bottom: 12px;
+    }
+  }
+
+  &.drop-left {
+    top: -156%;
+    left: -112%;
+   .dropdown-arr {
+      border-bottom: 8px solid rgba(0, 0, 0, 0.0) !important;
+      border-left: 8px solid rgba(0, 0, 0, 0.8);
+      border-right: 8px solid rgba(0, 0, 0, 0);
+      border-top: 8px solid rgba(0, 0, 0, 0);
+      height: 0;
+      left: auto;
+      right:-14px;
+      margin-left: -8px;
+      position: absolute;
+      top: 50%;
+      width: 0;
     }
   }
 }
@@ -193,4 +214,14 @@
         border-radius: 0 0 10px 0 ;
       }
     }
+}
+
+h1.dropdown {
+  font-size: 35px;
+  margin-top: 0;
+  line-height: 35px;
+  text-transform: normal;
+  .caret {
+    border-top-color:#1BA0E1;
+  }
 }

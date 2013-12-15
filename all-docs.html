@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="js/jquery.gridster.min.js"></script>
 	<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
 	<script type="text/javascript" src="js/docs.js"></script>
+	<script type="text/javascript" src="js/collapse.js"></script>
 </head>
 
 <body>
@@ -46,11 +47,8 @@
 		</div>
 		<div class="container">
 			<ul class="row top-pannel clearfix">
-				<li class="col-md-2"><a href="#" class="btn btn-sm back-btn">Назад</a></li>
-				<li class="col-md-2">ТИП: <b>ПИСЬМО</b></li>
-				<li class="col-md-3">
-					Статус: 
-					<b class="btn-available btn dropdown" data-toggle="dropdown">Подписан</b>
+				<li class="col-md-5">
+					<h1 class="dropdown" data-toggle="dropdown">Все документы <span class="caret"></span></h1>
 					<ul class="dropdown-menu" role="menu">
 						<li class="time">Последий статус назначен: 
 							<span class="date">20 ноября 2013</span>
@@ -66,118 +64,66 @@
 						<li><a href="#" class="icon-block-1">Отмена</a></li>
 					</ul>
 				</li>
+				<li class="col-md-3">
+					<form class="navbar-form search" role="search">
+			            <div class="form-group">
+			              <input type="text" class="form-control" placeholder="Поиск по пропускам">
+			            </div>
+			            <input type="submit" class="icon-search" value=""/>
+		          	</form>
+				</li>
 				<li class="col-md-4 pull-right"><a href="#" class="power-btn btn"></a><span class="username">Константин Константинович Константинов</span></li>
 			</ul>
-			<h1>Неполадки в районе объекта С-2</h1>
-			<ol class="breadcrumb">
-				<li><a href="#">ООО «Циклон»</a></li>
-				<li><a href="#">ОАО «Метрострой»</a></li>
-			</ol>
+			<ul class="nav nav-pills">
+		        <li class="dropdown btn btn-available">
+		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		            Dropdown <span class="caret"></span>
+		          </a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown btn">
+		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		            Dropdown <span class="caret"></span>
+		          </a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<ul class="doc-info">
-						<li><span class="title">Номер и дата:</span><span class="value"><a href="#">E088</a> / 10.10.2013 17:00</span></li>
-						<li>
-							<span class="title valign-mid">Исполнитель:</span>
-							<div class="user value">
-								<span class="photo"><img src="img/user1.jpg" alt="user"/></span>
-								<a href="#" class="name dropdown" data-toggle="dropdown">Феликс Константинопольский</a>
-								<ul class="dropdown-menu" role="menu">
-									<li class="title"><a href="#">Святослав Заря</a> Инженер ПТО, ООО «Циклон»</li>	
-									<li class="photo"><img src="img/konstantin.jpg" alt="user"/></li>	
-									<li><a href="#" class="icon-ok">Написать соообщение</a></li>
-									<li><a href="#" class="icon-clock">Личная страница</a></li>
-									<li class="dropdown-arr"></li>
-									<li><a href="#" class="icon-block-1">Отмена</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><span class="title valign-mid">Отправитель:</span><div class="user value"><span class="photo"><img src="img/user2.jpg" alt="user"/></span><a href="#" class="name">Феликс Константинопольский</a></div></li>
-						<li class="doc-format"><span class="title">Приложения:</span>
-							<ul class="value doc-format-list">
-								<li class="pic"><i></i><a href="#">Фотография001.jpg</a></li>
-								<li class="doc"><i></i><a href="#">Контракт-пример.doc</a></li>
-								<li class="xls"><i></i><a href="#">Расчет эргономических пока.xls</a></li>
-								<li class="pdf"><i></i><a href="#">Новые показатели.pdf</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<div class="view-main-doc">
-						<div class="overlay"><a href="file:///C:/Users/WARP/Desktop/desktopVerstka/img/doc-big.jpg" target="blank" class="zoom"></a></div>
-						<a href="" class="icon-chat-empty"></a>
-						<img src="img/doc-big.jpg" alt=""/>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container row">
-			<h4 class="col-md-12">Прикрепленные документы</h4>
-			<div class="attachments-carousel attachments">
-				<a href="#" class="icon-left-open">&nbsp;</a>
-				<ul class="col-md-12">
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-				   <li class="attachment">
-				        <span><img src="img/doc-1.jpg"> <a href="#">Распоряжение</a></span>
-				    </li>
-			  	</ul>
-			  	<a href="#" class="icon-right-open">&nbsp;</a>
-			  </div>
-		  	<div class="attachments-controls">
-		  		<a href="#" class="btn-available btn">Отправить</a>
-		  		<a href="#" class="btn">Удалить</a>
-		  	</div>
-	 	</div>
 	 	<div class="container" id="list">
-	 		<h3>В истории переписки 18 писем:</h3>
 			<table class="default-table">
 				<thead>
 					<tr>
+						<th width="80"><input type="checkbox"/></th>
 						<th width="150"><a href="#" class="sortable current">Номер / Дата <span class="caret"></span></a></th>
 						<th width="180"><a href="#" class="sortable ascending">Отправитель</a></th>
 						<th width="250"><a href="#" class="sortable">Получатель</a></th>
-						<th width="140"><a href="#" class="sortable">Тип</a></th>
-						<th></th>
-						<th class="status"><a href="#" class="sortable">Статус</a></th>
+						<th width="142"><a href="#" class="sortable">Тип</a></th>
+						<th width="150" class="status"><a href="#" class="sortable">Статус</a></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td class="today" colspan="7">Сегодня, 07.11.2013</td>
 					</tr>
-					<tr>
+					<tr class="collapse-trigger">
+							<td><input type="checkbox"/></td>
 						<td><a>71</a> / 01.10.13</td>
 						<td><a href="#">ООО Циклон</a></td>
 						<td><a href="#">ОАО Метрострой</a></td>
 						<td class="type">Письмо</td>
-						<td></td>
-						<td class="status"><span class="label label-success">Получен</span>
+						<td class="status dropdown"><span data-toggle="dropdown" class="label label-ready">Получен</span>
 							<ul class="dropdown-menu drop-left" role="menu">
 								<li class="time">Последий статус назначен: 
 									<span class="date">20 ноября 2013</span>
@@ -193,37 +139,64 @@
 								<li><a href="#" class="icon-block-1">Отмена</a></li>
 							</ul>
 						</td>
-					</tr>
-					<tr>
-						<td><a>70</a> / 01.10.13</td>
-						<td><a href="#">ООО Циклон</a></td>
-						<td><a href="#">Управление механизацией (ООО)</a></td>
-						<td class="type">Письмо</td>
-						<td></td>
-						<td class="status"><span class="label label-warning">Подписан</span>
-							<ul class="dropdown-menu drop-left" role="menu">
-								<li class="time">Последий статус назначен: 
-									<span class="date">20 ноября 2013</span>
-									<div class="progress">
-								        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-								          <span class="sr-only">40% Complete (success)</span>
-								        </div>
-							      	</div>
-								</li>
-								<li><a href="#" class="icon-ok">Отправить</a></li>
-								<li class="status-history"><a href="#" class="icon-clock">История статусов</a></li>
-								<li class="dropdown-arr"></li>
-								<li><a href="#" class="icon-block-1">Отмена</a></li>
-							</ul>
+						<td class="collapse">
+							<div class="col-md-6">
+								<ul class="doc-info">
+									<li><span class="title">Номер и дата:</span><span class="value"><a href="#">E088</a> / 10.10.2013 17:00</span></li>
+									<li><span class="title">Тема:</span>
+										<span class="value">
+											<span class="h4">Неполадки в районе объекта С-2</span>
+											<ol class="breadcrumb">
+												<li><a href="#">ООО «Циклон»</a></li>
+												<li><a href="#">ОАО «Метрострой»</a></li>
+											</ol>
+										</span>
+									</li>
+									<li>
+										<span class="title valign-mid">Исполнитель:</span>
+										<div class="user value">
+											<span class="photo"><img src="img/user1.jpg" alt="user"/></span>
+											<a href="#" class="name dropdown" data-toggle="dropdown">Феликс Константинопольский</a>
+											<ul class="dropdown-menu" role="menu">
+												<li class="title"><a href="#">Святослав Заря</a> Инженер ПТО, ООО «Циклон»</li>	
+												<li class="photo"><img src="img/konstantin.jpg" alt="user"/></li>	
+												<li><a href="#" class="icon-ok">Написать соообщение</a></li>
+												<li><a href="#" class="icon-clock">Личная страница</a></li>
+												<li class="dropdown-arr"></li>
+												<li><a href="#" class="icon-block-1">Отмена</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span class="title valign-mid">Отправитель:</span><div class="user value"><span class="photo"><img src="img/user2.jpg" alt="user"/></span><a href="#" class="name">Феликс Константинопольский</a></div></li>
+									<li class="doc-format"><span class="title">Приложения:</span>
+										<ul class="value doc-format-list">
+											<li class="pic"><i></i><a href="#">Фотография001.jpg</a></li>
+											<li class="doc"><i></i><a href="#">Контракт-пример.doc</a></li>
+											<li class="xls"><i></i><a href="#">Расчет эргономических пока.xls</a></li>
+											<li class="pdf"><i></i><a href="#">Новые показатели.pdf</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<div class="view-main-doc">
+									<div class="overlay"><a href="file:///C:/Users/WARP/Desktop/desktopVerstka/img/doc-big.jpg" target="blank" class="zoom"></a></div>
+									<a href="" class="icon-chat-empty"></a>
+									<img src="img/doc-big.jpg" alt=""/>
+									<div class="controls">
+										<a class="btn btn-default">История переписки</a>
+										<a class="btn btn-default">Открыть</a>
+								 	</div>
+								</div>
+							</div>
 						</td>
-					</tr>
-					<tr>
-						<td><a>58</a> / 25.09.13</td>
+					</tr><tr class="collapse-trigger">
+						<td><input type="checkbox"/></td>
+						<td><a>71</a> / 01.10.13</td>
 						<td><a href="#">ООО Циклон</a></td>
 						<td><a href="#">ОАО Метрострой</a></td>
 						<td class="type">Письмо</td>
-						<td></td>
-						<td class="status"><span class="label label-ready">Подготовлен</span>
+						<td class="status dropdown"><span data-toggle="dropdown" class="label label-success">Получен</span>
 							<ul class="dropdown-menu drop-left" role="menu">
 								<li class="time">Последий статус назначен: 
 									<span class="date">20 ноября 2013</span>
@@ -238,6 +211,130 @@
 								<li class="dropdown-arr"></li>
 								<li><a href="#" class="icon-block-1">Отмена</a></li>
 							</ul>
+						</td>
+						<td class="collapse">
+							<div class="col-md-6">
+								<ul class="doc-info">
+									<li><span class="title">Номер и дата:</span><span class="value"><a href="#">E088</a> / 10.10.2013 17:00</span></li>
+									<li><span class="title">Тема:</span>
+										<span class="value">
+											<span class="h4">Неполадки в районе объекта С-2</span>
+											<ol class="breadcrumb">
+												<li><a href="#">ООО «Циклон»</a></li>
+												<li><a href="#">ОАО «Метрострой»</a></li>
+											</ol>
+										</span>
+									</li>
+									<li>
+										<span class="title valign-mid">Исполнитель:</span>
+										<div class="user value">
+											<span class="photo"><img src="img/user1.jpg" alt="user"/></span>
+											<a href="#" class="name dropdown" data-toggle="dropdown">Феликс Константинопольский</a>
+											<ul class="dropdown-menu" role="menu">
+												<li class="title"><a href="#">Святослав Заря</a> Инженер ПТО, ООО «Циклон»</li>	
+												<li class="photo"><img src="img/konstantin.jpg" alt="user"/></li>	
+												<li><a href="#" class="icon-ok">Написать соообщение</a></li>
+												<li><a href="#" class="icon-clock">Личная страница</a></li>
+												<li class="dropdown-arr"></li>
+												<li><a href="#" class="icon-block-1">Отмена</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span class="title valign-mid">Отправитель:</span><div class="user value"><span class="photo"><img src="img/user2.jpg" alt="user"/></span><a href="#" class="name">Феликс Константинопольский</a></div></li>
+									<li class="doc-format"><span class="title">Приложения:</span>
+										<ul class="value doc-format-list">
+											<li class="pic"><i></i><a href="#">Фотография001.jpg</a></li>
+											<li class="doc"><i></i><a href="#">Контракт-пример.doc</a></li>
+											<li class="xls"><i></i><a href="#">Расчет эргономических пока.xls</a></li>
+											<li class="pdf"><i></i><a href="#">Новые показатели.pdf</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<div class="view-main-doc">
+									<div class="overlay"><a href="file:///C:/Users/WARP/Desktop/desktopVerstka/img/doc-big.jpg" target="blank" class="zoom"></a></div>
+									<a href="" class="icon-chat-empty"></a>
+									<img src="img/doc-big.jpg" alt=""/>
+									<div class="controls">
+										<a class="btn btn-default">История переписки</a>
+										<a class="btn btn-default">Открыть</a>
+								 	</div>
+								</div>
+							</div>
+						</td>
+					</tr><tr class="collapse-trigger">
+						<td><input type="checkbox"/></td>
+						<td><a>71</a> / 01.10.13</td>
+						<td><a href="#">ООО Циклон</a></td>
+						<td><a href="#">ОАО Метрострой</a></td>
+						<td class="type">Письмо</td>
+						<td class="status dropdown"><span data-toggle="dropdown" class="label label-warning">Получен</span>
+							<ul class="dropdown-menu drop-left" role="menu">
+								<li class="time">Последий статус назначен: 
+									<span class="date">20 ноября 2013</span>
+									<div class="progress">
+								        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								          <span class="sr-only">40% Complete (success)</span>
+								        </div>
+							      	</div>
+								</li>
+								<li><a href="#" class="icon-ok">Отправить</a></li>
+								<li class="status-history"><a href="#" class="icon-clock">История статусов</a></li>
+								<li class="dropdown-arr"></li>
+								<li><a href="#" class="icon-block-1">Отмена</a></li>
+							</ul>
+						</td>
+						<td class="collapse">
+							<div class="col-md-6">
+								<ul class="doc-info">
+									<li><span class="title">Номер и дата:</span><span class="value"><a href="#">E088</a> / 10.10.2013 17:00</span></li>
+									<li><span class="title">Тема:</span>
+										<span class="value">
+											<span class="h4">Неполадки в районе объекта С-2</span>
+											<ol class="breadcrumb">
+												<li><a href="#">ООО «Циклон»</a></li>
+												<li><a href="#">ОАО «Метрострой»</a></li>
+											</ol>
+										</span>
+									</li>
+									<li>
+										<span class="title valign-mid">Исполнитель:</span>
+										<div class="user value">
+											<span class="photo"><img src="img/user1.jpg" alt="user"/></span>
+											<a href="#" class="name dropdown" data-toggle="dropdown">Феликс Константинопольский</a>
+											<ul class="dropdown-menu" role="menu">
+												<li class="title"><a href="#">Святослав Заря</a> Инженер ПТО, ООО «Циклон»</li>	
+												<li class="photo"><img src="img/konstantin.jpg" alt="user"/></li>	
+												<li><a href="#" class="icon-ok">Написать соообщение</a></li>
+												<li><a href="#" class="icon-clock">Личная страница</a></li>
+												<li class="dropdown-arr"></li>
+												<li><a href="#" class="icon-block-1">Отмена</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span class="title valign-mid">Отправитель:</span><div class="user value"><span class="photo"><img src="img/user2.jpg" alt="user"/></span><a href="#" class="name">Феликс Константинопольский</a></div></li>
+									<li class="doc-format"><span class="title">Приложения:</span>
+										<ul class="value doc-format-list">
+											<li class="pic"><i></i><a href="#">Фотография001.jpg</a></li>
+											<li class="doc"><i></i><a href="#">Контракт-пример.doc</a></li>
+											<li class="xls"><i></i><a href="#">Расчет эргономических пока.xls</a></li>
+											<li class="pdf"><i></i><a href="#">Новые показатели.pdf</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<div class="view-main-doc">
+									<div class="overlay"><a href="file:///C:/Users/WARP/Desktop/desktopVerstka/img/doc-big.jpg" target="blank" class="zoom"></a></div>
+									<a href="" class="icon-chat-empty"></a>
+									<img src="img/doc-big.jpg" alt=""/>
+									<div class="controls">
+										<a class="btn btn-default">История переписки</a>
+										<a class="btn btn-default">Открыть</a>
+								 	</div>
+								</div>
+							</div>
 						</td>
 					</tr>
 				</tbody>

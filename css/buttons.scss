@@ -5,8 +5,17 @@
   font-size: 13px;
   border: none;
   text-decoration:none;
+  .dropdown-toggle {
+    padding:0;
+    text-decoration:none;
+  }
+  a {
+    color:inherit;
+  }
+  .caret {
+    border-top-color:inherit;
+  }
 }
-
 .nav-pills > li > a {
   border-radius: 90px;
 }

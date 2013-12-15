@@ -25,7 +25,7 @@ $(function() {
 	}); 
 	$('.back-btn').live('click', function(){
 		$(this).closest('.dropdown-menu').removeClass('history').animate({
-			        width: "250px"
+			        width: "187px"
 			      }, 500).css( 	
 			        "padding", "0"
 			      )
