@@ -15,11 +15,11 @@ $(function() {
 		if ($(this).closest('.dropdown-menu.on')) {
 			parent.animate({
 			        width: "380px"
-			      }, 500)
+			      }, 300)
 				.css( 	
-			        "padding", "13px 25px 20px"
+			        "padding", "0 25px 12px"
 			      );
-			parent.html("<li><span class='title icon-clock'>История назначения стстусов</span></li><li><soan><a class='btn btn-sm back-btn pull-left' href='#'>Назад</a></span></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li class='dropdown-arr'></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li>");
+			parent.html("<li><span class='title icon-clock'>История назначения стстусов</span></li><li><span><a class='btn btn-sm back-btn pull-left' href='#'>Назад</a></span></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li class='dropdown-arr'></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li><li>Подготовлен — 14.10.2013 — <a href='#'>Насиббулина Альбина</a></li>");
 		}
 		return false;
 	}); 

@@ -7,6 +7,22 @@
 @import "media.scss";
 @import "carousel.scss";
 
+/*var*/
+@mixin blue-gradient() {
+   background: rgba(65,168,228,0.5); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQxYThlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MWE4ZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(65,168,228,0.5) 0%, rgba(65,168,228,0.5) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,168,228,0.5)), color-stop(100%,rgba(65,168,228,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(65,168,228,0.5) 0%,rgba(65,168,228,0.5) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(65,168,228,0.5) 0%,rgba(65,168,228,0.5) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(65,168,228,0.5) 0%,rgba(65,168,228,0.5) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(65,168,228,0.5) 0%,rgba(65,168,228,0.5) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a8e4', endColorstr='#41a8e4',GradientType=0 ); /* IE6-8 */
+}
+
+
+
 .page .container {
   max-width: 890px;
   margin: 0 auto 71px;
@@ -190,7 +206,6 @@
     display: block;
     font-size: 13px;
     margin-top: 10px;
-    text-decoration: underline;
     &:hover {
       text-decoration: none;
     }
@@ -235,19 +250,19 @@
 }
 
 .doc-info {
-  li {
+  > li {
     position: relative;
     margin-bottom: 14px;
     width: 100%;
     float: left;
     line-height: 21px;
   }
-  .title {
+  >.title {
     font-size: 12px;
     width: 25%;
     position: absolute;
     line-height: 16px;
-    top:0;
+    top:2px;
     color: #666;
     text-align: left;
     &.valign-mid {
@@ -269,11 +284,17 @@
     border: 1px solid #e6e6e6;
     margin-right: 18px;
   }
+  .dropdown-menu .photo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 0;
+  }
   .user {
     &:hover {
         text-decoration: none;
     }
-    .name {
+    > .name {
       color: #56b4ee;
       text-decoration: none;
       border-bottom:1px dashed #0e84cf;
@@ -313,9 +334,14 @@
   li {
     padding-left: 46px;
     position: relative;
+    line-height: 21px;
+    margin-bottom: 13px;
     &:hover i {
       opacity: 1;
       filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    }
+    a {
+      color: #0E84CF;
     }
   }
 }
@@ -325,16 +351,18 @@
   padding: 0;
   a {
     color: #666666;
-    text-decoration: underline;
   }
 }
 
 .view-main-doc {
   position: relative;
-  padding-left: 15px;
-  width: 340px;
-  &:hover .zoom {
-    display:block;
+  margin-left: 15px;
+  width: 326px;
+  &:hover {
+    .zoom, .overlay {
+      display:block;
+      cursor: pointer;
+    }
   }
   .icon-chat-empty {
     font-size: 20px;
@@ -362,6 +390,15 @@
     color: #fff;
     background: url("../img/lupa.png") no-repeat;
   }
+  .overlay {
+    @include blue-gradient;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 2px;
+    top: 2px;
+    position: absolute;
+  }
 }
 
 /*tables*/
@@ -378,7 +415,7 @@
     }
   }
   td {
-      height: 64px;
+      padding: 16px 0;
       vertical-align: middle;
       border-top: 1px solid #e0e0e0;
       color: #666666;
@@ -386,6 +423,13 @@
         color:#000;
         font-weight: bold;
         text-transform: uppercase;
+      }
+      &.collapse {
+        width: 100%;
+        display: none;
+        &.in{
+          display: block;
+        }
       }
     a {
       color: #0e84cf;
@@ -402,6 +446,7 @@
         padding: 6px 10px;
         font-weight: normal;
         border-radius: 15px;
+        cursor: pointer;
         &.label-success {
           background: #1BBC9B;
         }

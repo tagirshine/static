@@ -22,11 +22,12 @@
     }
     color: #fff;
     font-size: 13px;
-    a {
+    >a {
       color: #fff;
       font-size: 13px;
       padding: 13px 0 13px 34px;
       display: block;
+      text-decoration: none;
       &:before {
         font-size: 18px;
         left: -16px;
@@ -46,7 +47,7 @@
   .other-desktop a {
     padding-left: 17px;
   }
-    .dropdown.active > a {
+  .dropdown.active > a {
       background: #1BA0E1;
       border-radius: 100px;
       color: #fff;
@@ -58,23 +59,23 @@
       margin-bottom: 3px;
       top: 0;
     }
-  .dropdown-arr {
-    border-bottom: 8px solid rgba(0, 0, 0, 0.8) !important;
-    border-left: 8px solid rgba(0, 0, 0, 0);
-    border-right: 8px solid rgba(0, 0, 0, 0);
-    border-top: 0 none;
-    height: 0;
-    left: 50%;
-    margin-left: -8px;
-    position: absolute;
-    top: -7px;
-    width: 0;
-  }
-  .time {
-  padding:13px 12px 20px;
-  text-align: center;
-  font-size: 12px;
-  line-height: 23px;
+    .dropdown-arr {
+      border-bottom: 8px solid rgba(0, 0, 0, 0.8) !important;
+      border-left: 8px solid rgba(0, 0, 0, 0);
+      border-right: 8px solid rgba(0, 0, 0, 0);
+      border-top: 0 none;
+      height: 0;
+      left: 50%;
+      margin-left: -8px;
+      position: absolute;
+      top: -7px;
+      width: 0;
+    }
+    .time {
+    padding:13px 12px 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
     .date {
       font-size: 18px;
       display: block;
@@ -105,18 +106,21 @@
         position: relative;
          &:before {
           font-size: 18px;
-          left: -10px;
+          left: -8px;
+          top: 2px;
         }
      }
       > a {
         display: inline;
         padding: 0;
-        text-decoration: underline;
         font-size: 12px;
       }
     }
     .btn {
       text-decoration: none;
+    }
+    .back-btn {
+      margin-bottom: 12px;
     }
   }
 }
@@ -133,7 +137,6 @@
 }
 
 .dropdown-menu .other-desktop a {
-  text-decoration: underline;
   padding-top: 0;
   padding-bottom: 0;
   &:hover {
@@ -162,4 +165,32 @@
 
 .dropdown.active .dropdown-menu {
   display: block;
+}
+
+.user .dropdown-menu {
+  padding: 5px 0 0 20px;
+    li {
+      width: 73%;
+      float: right;
+      &.dropdown-arr {
+        width: 10px;
+      }
+      &.title {
+        width: 100%;
+        margin-bottom: 12px;
+        a {
+          padding: 0;
+          font-size: 18px;
+          margin-bottom: 5px;
+          &:hover {
+            text-decoration: none;
+            background:none;
+            color: #fff;
+          }
+        }
+      }
+      &:last-child {
+        border-radius: 0 0 10px 0 ;
+      }
+    }
 }

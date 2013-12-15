@@ -34,12 +34,16 @@ a {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   cursor: pointer;
+  text-decoration:underline;
   &:hover, &:focus, &:active {
     color: #989898;
     outline: none;
   }
   &:focus, &:active {
     text-decoration: none !important;
+  }
+  &:hover {
+    text-decoration:none;
   }
 }
 

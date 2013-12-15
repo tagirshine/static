@@ -4,6 +4,7 @@
   background: #F2F2F2;
   font-size: 13px;
   border: none;
+  text-decoration:none;
 }
 
 .nav-pills > li > a {
@@ -21,7 +22,6 @@
 }
 
 .add-widget-btn {
-  text-decoration: underline;
   color: #17a488;
   font-size: 22px;
   position: relative;
@@ -84,9 +84,9 @@
     border: 3px solid #808080;
     text-decoration: none;
     float: left;
-    display:inline-block
-    &:hover {
-      border: 3px solid #fff;
+    display:inline-block;
+     &:hover {
+      border-color:#fff;
     }
   }
 }
