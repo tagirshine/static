@@ -5,6 +5,11 @@
       background: #1ba0e1;
       color: #fff;
     }
+    .bubble[data-toggle="dropdown"], .bubble[data-toggle="dropdown"]:focus, .bubble[data-toggle="dropdown"]:active {
+      padding: 12px;
+      border-radius: 30px;
+      left: -12px;
+    }
     .caret {
       border-top-color: #fff;
       border-bottom-color: #fff;
@@ -67,6 +72,14 @@
     }
 }
 
+.open .dropdown.bubble[data-toggle="dropdown"], 
+.open .dropdown.bubble[data-toggle="dropdown"]:focus, 
+.open .dropdown.bubble[data-toggle="dropdown"]:active {
+  padding: 12px;
+  border-radius: 30px;
+  left: -12px;
+}
+
 .dropdown-menu {
   display: none;
   background: rgba(0, 0, 0, 0.8);
@@ -74,7 +87,6 @@
   position: absolute;
   padding: 0;
   border: none;
-  left: -50%;
 }
 
 .dropdown-menu {

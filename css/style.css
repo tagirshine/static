@@ -130,7 +130,7 @@ ul {
 
 .icon-cog:before {
   font-size: 18px;
-  top: 2px; }
+  top: 0; }
 
 .dropdown-menu .back-btn {
   background: none;
@@ -167,6 +167,10 @@ ul {
 .dropdown.open *[data-toggle="dropdown"], .dropdown.open *[data-toggle="dropdown"]:focus, .dropdown.open *[data-toggle="dropdown"]:active {
   background: #1ba0e1;
   color: #fff; }
+.dropdown.open .bubble[data-toggle="dropdown"], .dropdown.open .bubble[data-toggle="dropdown"]:focus, .dropdown.open .bubble[data-toggle="dropdown"]:active {
+  padding: 12px;
+  border-radius: 30px;
+  left: -12px; }
 .dropdown.open .caret {
   border-top-color: #fff;
   border-bottom-color: #fff; }
@@ -215,14 +219,20 @@ ul {
     border-top-color: #fff;
     border-bottom-color: #fff; }
 
+.open .dropdown.bubble[data-toggle="dropdown"],
+.open .dropdown.bubble[data-toggle="dropdown"]:focus,
+.open .dropdown.bubble[data-toggle="dropdown"]:active {
+  padding: 12px;
+  border-radius: 30px;
+  left: -12px; }
+
 .dropdown-menu {
   display: none;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   position: absolute;
   padding: 0;
-  border: none;
-  left: -50%; }
+  border: none; }
 
 .dropdown-menu li {
   border-top: 1px solid #666666;
@@ -949,7 +959,7 @@ ul {
       text-transform: uppercase; }
     .default-table td.collapse {
       width: 100%;
-      display: block; }
+      display: none; }
       .default-table td.collapse.in {
         display: block; }
       .default-table td.collapse .controls .btn {
