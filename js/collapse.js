@@ -1,18 +1,14 @@
+/*Table accordeon*/
 $(function() {
-	// $(".collapse-trigger").on('click', function(){
-	// 	$(this).children().hide();
-	// 	$(this).toggleClass('on');
-		
-	// 	$('.collapse').toggleClass('in');
-	// 	if ($('.collapse').hasClass('in')) {
-	// 		$(this).children().slideDown('slow');
-	// 		$('.collapse').fadeIn(300);
-	// 	}
-	// 	else {
-	// 		$('.collapse').slideUp(400);
-	// 		$(this).children().not('.collapse').show(300);
-	// 	}
-	// 	return false;
-	// });
+	var $trigger = $('.collapse-trigger');
+    $trigger.find("tr").not('.accordion').hide();
+    $trigger.find("tr").eq(0).show();
+
+    $trigger.find(".accordion").click(function(){
+        $trigger.find('.accordion').not(this).siblings().fadeOut(500);
+        $(this).siblings().fadeToggle(500);
+    }).eq(0).trigger('click');
 });
+
+
 

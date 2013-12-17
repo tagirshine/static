@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/jquery.gridster.css" rel="stylesheet">
 	<link href="css/fontello.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -46,62 +46,56 @@
 			<a href="#" title="Пропуска" class="control permits shortcut">Пропуска<i class="icon"></i></a>
 		</div>
 		<div class="container">
-			<ul class="row top-pannel clearfix">
+			<ul class="row top-pannel nav clearfix">
 				<li class="col-md-5">
-					<h1 class="dropdown" data-toggle="dropdown">Все документы <span class="caret"></span></h1>
-					<ul class="dropdown-menu" role="menu">
-						<li class="time">Последий статус назначен: 
-							<span class="date">20 ноября 2013</span>
-							<div class="progress">
-						        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-						          <span class="sr-only">40% Complete (success)</span>
-						        </div>
-					      	</div>
-						</li>
-						<li><a href="#" class="icon-ok">Отправить</a></li>
-						<li class="status-history"><a href="#" class="icon-clock">История статусов</a></li>
-						<li class="dropdown-arr"></li>
-						<li><a href="#" class="icon-block-1">Отмена</a></li>
-					</ul>
+					<span class="dropdown full-drop">
+						<h1 data-toggle="dropdown">Все документы <span class="caret"></span></h1>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Письма <span class="count">(112)</span></a></li>
+							<li><a href="#">Акты <span class="count">(23)</span></a></li>
+							<li><a href="#">Распоряжения <span class="count">(43)</span></a></li>
+							<li><a href="#">Черновики <span class="count">(43)</span></a></li>
+							<li class="dropdown-arr"></li>
+							<li><a href="#">Отмена</a></li>
+						</ul>
+					</span>
 				</li>
 				<li class="col-md-3">
 					<form class="navbar-form search" role="search">
 			            <div class="form-group">
 			              <input type="text" class="form-control" placeholder="Поиск по пропускам">
+			           		<input type="submit" class="icon-search" value=""/>
 			            </div>
-			            <input type="submit" class="icon-search" value=""/>
 		          	</form>
 				</li>
 				<li class="col-md-4 pull-right"><a href="#" class="power-btn btn"></a><span class="username">Константин Константинович Константинов</span></li>
 			</ul>
 			<ul class="nav nav-pills">
-		        <li class="dropdown btn btn-available">
-		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-		            Dropdown <span class="caret"></span>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle btn btn-available" data-toggle="dropdown" href="#">
+		            Создать <span class="caret"></span>
 		          </a>
 		          <ul class="dropdown-menu" role="menu">
 		            <li><a href="#">Action</a></li>
 		            <li><a href="#">Another action</a></li>
 		            <li><a href="#">Something else here</a></li>
-		            <li class="divider"></li>
+		            <li class="dropdown-arr"></li>
 		            <li><a href="#">Separated link</a></li>
 		          </ul>
 		        </li>
-		        <li class="dropdown btn">
-		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-		            Dropdown <span class="caret"></span>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle btn" data-toggle="dropdown" href="#">
+		            Действия <span class="caret"></span>
 		          </a>
 		          <ul class="dropdown-menu" role="menu">
 		            <li><a href="#">Action</a></li>
 		            <li><a href="#">Another action</a></li>
 		            <li><a href="#">Something else here</a></li>
-		            <li class="divider"></li>
+		            <li class="dropdown-arr"></li>
 		            <li><a href="#">Separated link</a></li>
 		          </ul>
 		        </li>
 		      </ul>
-		</div>
-	 	<div class="container" id="list">
 			<table class="default-table">
 				<thead>
 					<tr>
@@ -190,7 +184,60 @@
 								</div>
 							</div>
 						</td>
-					</tr><tr class="collapse-trigger">
+					</tr>
+					<div class="collapse">
+						<div class="col-md-8">
+							<ul class="doc-info">
+								<li><span class="title">Номер и дата:</span><span class="value"><a href="#">E088</a> / 10.10.2013 17:00</span></li>
+								<li><span class="title">Тема:</span>
+									<span class="value">
+										<span class="h3">Неполадки в районе объекта С-2</span>
+										<ol class="breadcrumb">
+											<li><a href="#">ООО «Циклон»</a></li>
+											<li><a href="#">ОАО «Метрострой»</a></li>
+										</ol>
+									</span>
+								</li>
+								<li>
+									<span class="title valign-mid">Исполнитель:</span>
+									<div class="user value">
+										<span class="photo"><img src="img/user1.jpg" alt="user"/></span>
+										<a href="#" class="name dropdown" data-toggle="dropdown">Феликс Константинопольский</a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="title"><a href="#">Святослав Заря</a> Инженер ПТО, ООО «Циклон»</li>	
+											<li class="photo"><img src="img/konstantin.jpg" alt="user"/></li>	
+											<li><a href="#" class="icon-ok">Написать соообщение</a></li>
+											<li><a href="#" class="icon-clock">Личная страница</a></li>
+											<li class="dropdown-arr"></li>
+											<li><a href="#" class="icon-block-1">Отмена</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><span class="title valign-mid">Отправитель:</span><div class="user value"><span class="photo"><img src="img/user2.jpg" alt="user"/></span><a href="#" class="name">Феликс Константинопольский</a></div></li>
+								<li class="doc-format"><span class="title">Приложения:</span>
+									<ul class="value doc-format-list">
+										<li class="pic"><i></i><a href="#">Фотография001.jpg</a></li>
+										<li class="doc"><i></i><a href="#">Контракт-пример.doc</a></li>
+										<li class="xls"><i></i><a href="#">Расчет эргономических пока.xls</a></li>
+										<li class="pdf"><i></i><a href="#">Новые показатели.pdf</a></li>
+										<li><a href="#" class="else-link">и еще 4 файла</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="nav-pills nav controls">
+								<a class="btn btn-default">История переписки</a>
+								<a class="btn btn-default">Открыть</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="view-main-doc">
+								<div class="overlay"><a href="file:///C:/Users/WARP/Desktop/desktopVerstka/img/doc-big.jpg" target="blank" class="zoom"></a></div>
+								<a href="" class="icon-chat-empty"></a>
+								<img src="img/collapse-doc.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+					<tr class="collapse-trigger">
 						<td><input type="checkbox"/></td>
 						<td><a>71</a> / 01.10.13</td>
 						<td><a href="#">ООО Циклон</a></td>

@@ -16,7 +16,7 @@
     border-top-color:inherit;
   }
 }
-.nav-pills > li > a {
+.bottom-nav > li > a {
   border-radius: 90px;
 }
 
@@ -61,7 +61,7 @@
     background: #1BBC9B;
   }
 }
-
+.nav .power-btn,
 .power-btn {
   border-radius: 9px;
   font-size: 16px;
@@ -76,8 +76,8 @@
   left: -3px;
 }
 
-.btn.btn-available {
-  background: #c4f2e4;
+.btn.btn-available, .btn.btn-available:hover {
+  background-color: #c4f2e4;
   color: #00a499;
 }
 
